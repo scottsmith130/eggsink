@@ -20,7 +20,7 @@ for ($i=1; $i<=5; $i++) {
     addToLog('Exchange connection retry ' . $i);
 }
 
-$google = new GoogleCalendarClient(GOOGLE_CLIENT_ID, GOOGLE_EMAIL, dirname(__FILE__) . '/config/' . GOOGLE_KEY_FILE, GOOGLE_APP_NAME, GOOGLE_CALENDAR_ID);
+$google = new GoogleCalendarClient(GOOGLE_CLIENT_ID, GOOGLE_EMAIL, dirname(__FILE__) . '/config/' . GOOGLE_KEY_FILE, 'EggSink', GOOGLE_CALENDAR_ID);
 $events = $google->getEvents(SYNC_DAYS_FROM_NOW);
 
 // Reduce existing Google events to those that were previously exported from Exchange
