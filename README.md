@@ -38,3 +38,7 @@ php eggsink.php
 ```
 
 This script is probably most useful when configured to run on a schedule. 
+
+## License
+
+EggSink is free software, and may be redistributed under the MIT-LICENSE.
