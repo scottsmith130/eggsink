@@ -1,11 +1,19 @@
 # EggSink
 
-Script for synchronizing data between Microsoft Exchange Server and Google Calendar.  Uses https://github.com/jamesiarmes/php-ews to talk to Exchange Web Services and https://github.com/google/google-api-php-client to talk to the Google Calendar. Requires at least PHP 5.4.
+## What is EggSink?
 
-**_NOTE: Currently only does one-way synchronization of events from an Exchange calendar to Google Calendar._**
+EggSink is a script for synchronizing data between Microsoft Exchange Server and Google Calendar. It was written because at the time there was a lack of options out there for non-Windows platforms to synchronize calendar data from Exchange to Google Calendar (generally you need to be using Microsoft Outlook on Microsoft Windows in order to use most of the tools available for this, and most of them are not free).
+
+**_NOTE: EggSink currently only does one-way synchronization of events from an Exchange calendar to Google Calendar._**
+
+## Installation
+EggSink Uses https://github.com/jamesiarmes/php-ews to talk to Exchange Web Services and https://github.com/google/google-api-php-client to talk to the Google Calendar. Both libraries are included in hte project, but may be setup using Composer in the future. 
+
+EggSink also requires at least PHP 5.4.
 
 Simply download the source for this and setup the configuration.  You will need to have an active Exchange account and enabled Google Calendar API for your existing Google account.
 
+## Configuration
 To configure, create a config directory in the root of the project, and place a config.php file under the config directory. The config.php file should have the following settings defined:
 
 ```php
@@ -23,6 +31,7 @@ const GOOGLE_KEY_FILE = '*.p12'; // Google Calendar API service account p12 file
 
 Make sure the P12 file is also placed into the config directory.
 
+## Usage
 To run the script (assuming php is in the path and already in the EggSink project directory), use the command line:
 ```
 php eggsink.php
