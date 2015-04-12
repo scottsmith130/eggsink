@@ -1,6 +1,6 @@
 # EggSink
 
-Script for synchronizing data between Microsoft Exchange Server and Google Calendar.  Uses https://github.com/jamesiarmes/php-ews to talk to Exchange Web Services and Google Calendar API for data exchange.
+Script for synchronizing data between Microsoft Exchange Server and Google Calendar.  Uses https://github.com/jamesiarmes/php-ews to talk to Exchange Web Services and https://github.com/google/google-api-php-client to talk to the Google Calendar.
 
 **_NOTE: Currently only does one-way synchronization of events from an Exchange calendar to Google Calendar._**
 
