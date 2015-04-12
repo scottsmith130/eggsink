@@ -10,9 +10,10 @@ To configure, create a config directory in the root of the project, and place a 
 
 ```php
 const SYNC_DAYS_FROM_NOW = 1; // number of days in the future to sync
-const SERVER = ''; // the hostname of the Exchange server
-const USERNAME = ''; // the username for the Exchange server
-const PASSWORD = ''; // the password for the Exchange server
+
+const EXCHANGE_SERVER = ''; // the hostname of the Exchange server
+const EXCHANGE_USERNAME = ''; // the username for the Exchange server
+const EXCHANGE_PASSWORD = ''; // the password for the Exchange server
 
 const GOOGLE_CALENDAR_ID = ''; // the ID of the Google Calendar being synced
 const GOOGLE_CLIENT_ID = ''; // Google Calendar API service account client ID

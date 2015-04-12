@@ -7,7 +7,7 @@ addToLog('Started eggsink');
 for ($i=1; $i<=5; $i++) {
     try
     {
-        $exchange = new ExchangeClient(SERVER, USERNAME, PASSWORD);
+        $exchange = new ExchangeClient(EXCHANGE_SERVER, EXCHANGE_USERNAME, EXCHANGE_PASSWORD);
         $meetings = $exchange->getCalendarEvents(SYNC_DAYS_FROM_NOW);
         break;
     } catch (Exception $e) {
